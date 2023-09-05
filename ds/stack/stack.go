@@ -7,6 +7,10 @@ type Stack[T any] struct {
 	lock sync.RWMutex
 }
 
+func NewStack[T any]() *Stack[T] {
+	return &Stack[T]{}
+}
+
 func (s *Stack[T]) Push(in T) {
 	s.lock.Lock()
 	defer s.lock.Unlock()
