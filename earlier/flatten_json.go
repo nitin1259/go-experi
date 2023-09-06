@@ -37,7 +37,7 @@ func flattenJson(input map[string]interface{}) map[string]interface{} {
 
 	for key, val := range input {
 
-		fmt.Println(key, val)
+		// fmt.Println(key, val)
 		switch val.(type) {
 		case map[string]interface{}:
 			flatten := flattenJson(val.(map[string]interface{}))
