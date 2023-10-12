@@ -11,14 +11,53 @@ String add(String a, String b)
 
 */
 
+ // Question 2- 
+/*     assertAdd("1,234", "1,234", "2,468");
+
+        assertAdd("701,408,733", "433,494,437", "1,134,903,170");
+        assertAdd("9,234", "1,234", "10,468");
+        
+        assertAdd("999", "1", "1,000");
+
+        assertAdd("1,999", "1", "1,000");
+        assertAdd("1,999", "0,001", "1,000");
+
+        234,123,432,423,423,134,123
+
+*/
 class HelloWorld {
     public static void main(String[] args) {
         
-    String num1 = "701408733";
-    String num2 = "494,437";
-    System.out.println(add(num1, num2 )));
+        String num1 = "701408733";
+        String num2 = "494,437";
+        System.out.println(add(num1, num2 )));
+
+        num1 = "701,408,733";
+        num2 = "433,494,437";
+        num1 = removeComas(num1);
+        num2 = removeComas(num2);
+        System.out.println(addComas(add(num1, num2 )));
     }
-    
+
+     public static String removeComas(String num) {
+        return num.replace(",", "");
+    }
+
+    public static String addComas(String num){
+        StringBuilder result = new StringBuilder();
+        int len = num.length();
+        int count = 0;
+        for (int i = len-1; i>=0; i--){
+            if (count == 3){
+                result.insert(0, ",");
+                count =0 ;
+            }
+            result.insert(0, num.charAt(i)- '0');
+            count++;
+        }
+        return result.toString();
+    }
+
     public static String add(String num1, String num2){
         int len1 = num1.length();
         int len2 = num2.length();
@@ -45,40 +84,5 @@ class HelloWorld {
             result.insert(0, carry);
         }
         return result.toString();
-    }
-    
-    // Question 2- 
-      
-    /*     assertAdd("1,234", "1,234", "2,468");
- 
-            assertAdd("701,408,733", "433,494,437", "1,134,903,170");
-            assertAdd("9,234", "1,234", "10,468");
-            
-            assertAdd("999", "1", "1,000");
-
-            assertAdd("1,999", "1", "1,000");
-            assertAdd("1,999", "0,001", "1,000");
-
-            234,123,432,423,423,134,123
-    
-    */
-    
-    public static String removeComas(String num) {
-        return num.replace(",", "");
-    }
-
-    public static String addComas(String num){
-        StringBuilder result = new StringBuilder();
-        int len = num.length();
-        int count = 0;
-        for (int i = len-1; i>=0; i--){
-            if (count == 3){
-                result.insert(0, ",");
-                count =0 ;
-            }
-            result.insert(0, num.charAt(i)- '0');
-            count++;
-        }
-        return result.toString();
-    }
+    }  
 }
