@@ -11,24 +11,44 @@ String add(String a, String b)
 
 */
 
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
-
 class HelloWorld {
     public static void main(String[] args) {
         
-    String num1 = "701,408,733";
-    String num2 = "433,494,437";
-    
-    num1 = removeComas(num1);
-     num2 = removeComas(num2);
-    System.out.println(addComas(add(num1, num2 )));
+    String num1 = "701408733";
+    String num2 = "494,437";
+    System.out.println(add(num1, num2 )));
     }
     
-     public static String removeComas(String num) {
-        return num.replace(",", "");
+    public static String add(String num1, String num2){
+        int len1 = num1.length();
+        int len2 = num2.length();
+        
+        StringBuilder result = new StringBuilder();
+        int carry = 0 ;
+        int max = Math.max(num1.length(), num2.length());
+        
+        while(num1.length() < max){
+            num1 = "0"+num1;
+        }
+        while(num2.length() < max){
+            num2 = "0"+num2;
+        }
+        
+        for (int i = max-1; i>=0; i--){
+            int digit1 = num1.charAt(i)- '0';
+            int digit2 = num2.charAt(i)- '0';
+            int sum = digit1+digit2+carry;
+            carry = sum/10;
+            result.insert(0, sum%10);
+        }
+        if (carry > 0){
+            result.insert(0, carry);
+        }
+        return result.toString();
     }
     
+    // Question 2- 
+      
     /*     assertAdd("1,234", "1,234", "2,468");
  
             assertAdd("701,408,733", "433,494,437", "1,134,903,170");
@@ -43,44 +63,10 @@ class HelloWorld {
     
     */
     
-    
-    
-    public static String add(String num1, String num2){
-        
-        int len1 = num1.length();
-        int len2 = num2.length();
-        
-        StringBuilder result = new StringBuilder();
-        int carry = 0 ;
-        
-        int max = Math.max(num1.length(), num2.length());
-        
-        
-        while(num1.length() < max){
-            num1 = "0"+num1;
-        }
-        
-        while(num2.length() < max){
-            num2 = "0"+num2;
-        }
-        
-        for (int i = max-1; i>=0; i--){
-            
-            int digit1 = num1.charAt(i)- '0';
-            int digit2 = num2.charAt(i)- '0';
-            int sum = digit1+digit2+carry;
-            carry = sum/10;
-            
-            result.insert(0, sum%10);
-        }
-        
-        if (carry > 0){
-            result.insert(0, carry);
-        }
-        return result.toString();
+    public static String removeComas(String num) {
+        return num.replace(",", "");
     }
-    
-    
+
     public static String addComas(String num){
         StringBuilder result = new StringBuilder();
         int len = num.length();
@@ -93,7 +79,6 @@ class HelloWorld {
             result.insert(0, num.charAt(i)- '0');
             count++;
         }
-        
         return result.toString();
     }
 }
