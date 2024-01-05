@@ -14,7 +14,7 @@ Sample output
 
 import "fmt"
 
-func main() {
+func Calix_main() {
 	fmt.Println("running main...")
 	input := []int{3,5,-4,8,11,1,-1,6}
 	target := 10

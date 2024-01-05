@@ -15,7 +15,7 @@ type apiUrlRespStatus struct{
 	resp map[string]interface{}
 }
 
-func main() {
+func GetPi_main() {
 	
 
 	urls := []string{
