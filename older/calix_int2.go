@@ -55,8 +55,8 @@ func max(a, b int) int {
 }
 
 func main() {
-	str1 := "abcdef"
-	str2 := "abcfed"
+	str1 := "STRINGMATCH"
+	str2 := "MATCHBOX"
 
 	overlapLength := findOverlappingLength(str1, str2)
 	fmt.Printf("Length of overlapping substring: %d\n", overlapLength)
