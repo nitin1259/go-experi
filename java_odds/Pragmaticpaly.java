@@ -2,7 +2,11 @@ package com.renovsys;
 
 import java.util.LinkedList;
 
-// print 1 to 100 with 4 threads in sequence 
+// Question 1 ->
+// custom hash map implementation with get functionality on both key as well as value with O(1)
+
+// Question 2:
+// print 1 to 100 with 4 threads in sequence
 
 public class TestPragmaticplay {
 
