@@ -7,4 +7,4 @@ jobs:
       - name: Print welcome
         run: echo "Welcome to first workflow, job and step"
       - name: Print Goodbye
-        value: echo "Done - bye!"
+        run: echo "Done - bye!"
