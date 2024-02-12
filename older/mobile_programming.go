@@ -15,7 +15,7 @@ E.g
 
 */
 
-func main() {
+func mobile_programming_main() {
 
 	// input := []int{1,2,3,4,5,6,6}
 
