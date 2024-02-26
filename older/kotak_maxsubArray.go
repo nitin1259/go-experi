@@ -27,6 +27,6 @@ func maxSubArray(num []int)int{
 func maxi(a, b int)int{
 	if a>b{
 		return a
-	}
+	} // 9157199388
 	return b
 }
