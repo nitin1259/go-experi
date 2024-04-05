@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func reverse_main() {
 	fmt.Println("reverse string")
 
 	fmt.Println("Reverse String: ", reverseString("Kapila pashu Aahar"))
