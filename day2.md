@@ -1,6 +1,6 @@
 # Day 2
 
-## a. String:
+## A. String:
 
 Strings are a sequence of characters represented in GoLang as a slice of bytes.
 They are immutable, meaning once created, their contents cannot be changed.
