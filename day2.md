@@ -82,7 +82,7 @@ for _, runeValue := range str {
 
 These examples cover the basics of working with strings in GoLang, including creation, manipulation, formatting, and conversion, as well as support for Unicode characters and runes. Experimenting with these examples and exploring further will deepen your understanding of string handling in GoLang.
 
-## b. Input/output:
+## B. Input/output:
 
 Input/output operations in GoLang involve reading data from standard input, files,
 or other sources, and writing data to standard output, files, or other destinations.
