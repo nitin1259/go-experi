@@ -258,7 +258,7 @@ func main() {
 }
 ```
 
-## c. Struct, Method & Interface:
+## C. Struct, Method & Interface:
 
 Structs are composite data types in GoLang that allow you to group together different data types under one name.
 Methods are functions associated with a type, and interfaces define a set of methods that a
