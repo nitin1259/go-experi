@@ -258,7 +258,7 @@ func main() {
 }
 ```
 
-## c. Struct, Method & Interface:
+## C. Struct, Method & Interface:
 
 Structs are composite data types in GoLang that allow you to group together different data types under one name.
 Methods are functions associated with a type, and interfaces define a set of methods that a
@@ -409,7 +409,7 @@ PrintValue("hello") // String value: hello
 PrintValue(true)    // Unknown type
 ```
 
-## d. Errors:
+## D. Errors:
 
 Errors handling is an essential aspect of robust software development.
 GoLang provides a built-in error type and idiomatic ways to handle errors using the `error` interface
