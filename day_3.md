@@ -95,7 +95,7 @@
   }
   ```
 
-### e. Channels
+### 5. Channels
 
 - **Channels**: Channels are used for communication and synchronization between goroutines.
 
@@ -120,7 +120,7 @@
   }
   ```
 
-### f. Buffered vs. Unbuffered Channels
+### 6. Buffered vs. Unbuffered Channels
 
 - **Unbuffered Channel**: Synchronizes sender and receiver directly.
 
@@ -164,7 +164,7 @@
   }
   ```
 
-### g. Select Statement
+### 7. Select Statement
 
 - **Select Statement**: Used to wait on multiple channel operations simultaneously.
 
@@ -201,7 +201,7 @@
   }
   ```
 
-### h. Mutex Lock
+### 8. Mutex Lock
 
 - **Mutex Lock**: Used to synchronize access to shared resources across multiple goroutines.
 
