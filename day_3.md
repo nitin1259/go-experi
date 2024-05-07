@@ -1,6 +1,6 @@
 ## Day 3
 
-### a. Sequential vs Concurrent
+### 1. Sequential vs Concurrent
 
 - **Sequential Execution**: In sequential execution, tasks are performed one after another in a predetermined order. Each task completes before the next one begins.
 
@@ -30,7 +30,7 @@
 
 - **Concurrent Execution**: In concurrent execution, tasks can overlap and execute simultaneously, possibly speeding up the overall process.
 
-### b. Goroutines - Main Goroutine, Anonymous Goroutine
+### 2. Goroutines - Main Goroutine, Anonymous Goroutine
 
 - **Main Goroutine**: The `main()` function represents the main goroutine that starts when your program runs.
 
@@ -57,7 +57,7 @@
 
 - **Anonymous Goroutine**: A goroutine can be launched anonymously using an anonymous function.
 
-### c. Go Runtime Scheduler
+### 3. Go Runtime Scheduler
 
 - **Go Runtime Scheduler**: Manages the execution of goroutines on OS threads. It handles the multiplexing of goroutines onto a limited number of OS threads (`GOMAXPROCS`).
 
