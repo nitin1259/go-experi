@@ -530,7 +530,7 @@ func main() {
 - Provide informative error messages.
 - Handle errors gracefully without crashing the program.
 
-## e. Logging:
+## E. Logging:
 
 Logging is crucial for monitoring and debugging applications. GoLang provides the `log` package for basic logging functionality and the `logrus`, `zap`, and other third-party packages for more advanced logging features.
 
