@@ -609,7 +609,7 @@ properties from parent loggers.
 - Log sensitive information securely (avoid logging passwords or personally identifiable information).
   hese topics cover the fundamentals of logging in GoLang and introduce more advanced concepts such as structured logging, log levels, and best practices. Experimenting with different logging libraries and exploring further will deepen your understanding of logging in GoLang.
 
-## f. Testing:
+## F. Testing:
 
 Testing is an integral part of software development to ensure the correctness and reliability of code.
 GoLang comes with a built-in testing framework, making it easy to write and execute tests for Go packages.
