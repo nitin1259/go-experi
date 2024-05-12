@@ -61,7 +61,7 @@
 
 - **Go Runtime Scheduler**: Manages the execution of goroutines on OS threads. It handles the multiplexing of goroutines onto a limited number of OS threads (`GOMAXPROCS`).
 
-### d. Wait Groups and Examples
+### 4. Wait Groups and Examples
 
 - **Wait Groups**: `sync.WaitGroup` is used to wait for a collection of goroutines to finish before proceeding.
 
