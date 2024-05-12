@@ -239,7 +239,7 @@
   }
   ```
 
-### i. Concurrency Practice
+### 9. Concurrency Practice
 
 - **Concurrency Practice**: Implementing concurrent programs helps reinforce understanding of goroutines, channels, and synchronization techniques.
 
