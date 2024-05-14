@@ -30,4 +30,4 @@ Here's a must-follow list 👇
 
 Following practics will make your Golang application secure. However, along with it, every application needs its own extra security steps depending on its nature/domain.
 
-Tell me in the comments What Security Practices do you follow/missing?
+Tell me in the comments what Security Practices do you follow/missing?
