@@ -22,7 +22,7 @@ str := "Hello, GoLang! How are you doing"
 String literals can contain special characters that need to be escaped using backslashes (`\`). For example:
 
 ```go
-str := "This is a \"quoted\" string."
+str := "This is a \"quoted\" string"
 ```
 
 ### 3. String manipulation methods:
