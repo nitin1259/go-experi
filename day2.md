@@ -14,7 +14,7 @@ Certainly! Let's cover each topic with examples:
 Strings in GoLang are created using string literals enclosed within double quotes (`"`). Here's an example:
 
 ```go
-str := "Hello, GoLang!"
+str := "Hello, GoLang! How are you doing"
 ```
 
 ### 2. String literals and escaping:
