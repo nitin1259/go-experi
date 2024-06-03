@@ -1,0 +1,97 @@
+12 Types of Databases and When and Where to Use Them
+
+1. Relational Databases (SQL)
+
+▶️ Databases that store data in structured tables with rows and columns.
+
+▶️ Ideal when your data is well-organized and requires consistency and complex queries.
+
+Example: MySQL, PostgreSQL, CockroachDB
+
+2. Document Databases
+
+▶️ Databases that manage semi-structured data, allowing different fields in each document.
+
+▶️ Great for flexible schemas and diverse data structures.
+
+Example: MongoDB, Couchbase.
+
+3. Key-Value Store
+
+▶️ Databases that store data as key-value pairs.
+
+▶️ Perfect for quick data retrieval and handling high traffic.
+
+Example: Redis, DynamoDB.
+
+4. Graph Databases
+
+▶️ Databases designed to manage data with complex relationships.
+
+▶️ Best for applications like recommendation systems and navigation.
+
+Example: Neo4j, Amazon Neptune.
+
+5. Time-Series Databases
+
+▶️ Databases optimized for storing and querying time-stamped data.
+
+▶️ Ideal for tracking time-series data like IoT sensor data or server logs.
+
+Example: InfluxDB, Prometheus.
+
+6. Columnar Databases
+
+▶️ Databases that store data by columns rather than rows.
+
+▶️ Excellent for handling large datasets and analytical queries.
+
+Example: Amazon Redshift, Snowflake.
+
+7. In-Memory Databases
+
+▶️ Databases that keep data in RAM for fast access.
+
+▶️ Best when speed is crucial, such as in caching and real-time analytics.
+
+Example: Redis, Memcached.
+
+8. Search Engines
+
+▶️ Systems designed for full-text search capabilities.
+
+▶️ Essential for applications needing to search large volumes of text.
+
+Example: Elasticsearch, Solr.
+
+9. Spatial Databases
+
+▶️ Databases that handle geographical and location-based data.
+
+▶️ Used in applications needing spatial indexing and geospatial analytics.
+
+Example: PostGIS with PostgreSQL, Oracle Spatial.
+
+10. Blob Datastore
+
+▶️ Storage systems for large binary objects like documents, images, and videos.
+
+▶️ Suitable for applications requiring reliable and cost-effective storage of large files.
+
+Example: Azure Blob Storage, Amazon S3.
+
+11. Ledger Databases
+
+▶️ Databases that record and maintain an immutable history of transactions.
+
+▶️ Perfect for applications requiring tamper-evident transaction records.
+
+Example: Amazon QLDB, Azure SQL Ledger.
+
+12. Vector Databases
+
+▶️ Databases that store vector embeddings for fast similarity searches.
+
+▶️ Ideal for search engines, LLM-based applications, and semantic searches.
+
+Example: Pinecone, Milvus.
