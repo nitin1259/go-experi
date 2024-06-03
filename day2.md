@@ -14,7 +14,7 @@ Certainly! Let's cover each topic with examples:
 Strings in GoLang are created using string literals enclosed within double quotes (`"`). Here's an example:
 
 ```go
-str := "Hello, GoLang!"
+str := "Hello, GoLang! How are you doing"
 ```
 
 ### 2. String literals and escaping:
@@ -22,7 +22,7 @@ str := "Hello, GoLang!"
 String literals can contain special characters that need to be escaped using backslashes (`\`). For example:
 
 ```go
-str := "This is a \"quoted\" string."
+str := "This is a \"quoted\" string"
 ```
 
 ### 3. String manipulation methods:
@@ -530,7 +530,7 @@ func main() {
 - Provide informative error messages.
 - Handle errors gracefully without crashing the program.
 
-## e. Logging:
+## E. Logging:
 
 Logging is crucial for monitoring and debugging applications. GoLang provides the `log` package for basic logging functionality and the `logrus`, `zap`, and other third-party packages for more advanced logging features.
 
@@ -609,7 +609,7 @@ properties from parent loggers.
 - Log sensitive information securely (avoid logging passwords or personally identifiable information).
   hese topics cover the fundamentals of logging in GoLang and introduce more advanced concepts such as structured logging, log levels, and best practices. Experimenting with different logging libraries and exploring further will deepen your understanding of logging in GoLang.
 
-## f. Testing:
+## F. Testing:
 
 Testing is an integral part of software development to ensure the correctness and reliability of code.
 GoLang comes with a built-in testing framework, making it easy to write and execute tests for Go packages.

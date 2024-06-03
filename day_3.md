@@ -1,6 +1,6 @@
 ## Day 3
 
-### a. Sequential vs Concurrent
+### 1. Sequential vs Concurrent
 
 - **Sequential Execution**: In sequential execution, tasks are performed one after another in a predetermined order. Each task completes before the next one begins.
 
@@ -30,7 +30,7 @@
 
 - **Concurrent Execution**: In concurrent execution, tasks can overlap and execute simultaneously, possibly speeding up the overall process.
 
-### b. Goroutines - Main Goroutine, Anonymous Goroutine
+### 2. Goroutines - Main Goroutine, Anonymous Goroutine
 
 - **Main Goroutine**: The `main()` function represents the main goroutine that starts when your program runs.
 
@@ -57,11 +57,11 @@
 
 - **Anonymous Goroutine**: A goroutine can be launched anonymously using an anonymous function.
 
-### c. Go Runtime Scheduler
+### 3. Go Runtime Scheduler
 
 - **Go Runtime Scheduler**: Manages the execution of goroutines on OS threads. It handles the multiplexing of goroutines onto a limited number of OS threads (`GOMAXPROCS`).
 
-### d. Wait Groups and Examples
+### 4. Wait Groups and Examples
 
 - **Wait Groups**: `sync.WaitGroup` is used to wait for a collection of goroutines to finish before proceeding.
 
@@ -95,7 +95,7 @@
   }
   ```
 
-### e. Channels
+### 5. Channels
 
 - **Channels**: Channels are used for communication and synchronization between goroutines.
 
@@ -120,7 +120,7 @@
   }
   ```
 
-### f. Buffered vs. Unbuffered Channels
+### 6. Buffered vs. Unbuffered Channels
 
 - **Unbuffered Channel**: Synchronizes sender and receiver directly.
 
@@ -164,7 +164,7 @@
   }
   ```
 
-### g. Select Statement
+### 7. Select Statement
 
 - **Select Statement**: Used to wait on multiple channel operations simultaneously.
 
@@ -201,7 +201,7 @@
   }
   ```
 
-### h. Mutex Lock
+### 8. Mutex Lock
 
 - **Mutex Lock**: Used to synchronize access to shared resources across multiple goroutines.
 
@@ -239,7 +239,7 @@
   }
   ```
 
-### i. Concurrency Practice
+### 9. Concurrency Practice
 
 - **Concurrency Practice**: Implementing concurrent programs helps reinforce understanding of goroutines, channels, and synchronization techniques.
 
