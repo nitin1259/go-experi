@@ -1,4 +1,5 @@
-In this training, we're going to talk about what a Kubernetes operator is, why this operator concept even emerged, and when you should use operators.
+In this training, we're going to talk about what a Kubernetes operator is, why this operator concept even emerged, 
+and when you should use operators.
 
 To give you an overview, operators are used mainly for stateful applications. We'll first compare how Kubernetes manages stateless and stateful applications and then compare deploying and managing stateful applications without an operator versus deploying them with a Kubernetes operator.
 
