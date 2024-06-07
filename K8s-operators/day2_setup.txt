@@ -1,0 +1,106 @@
+nstall Docker and Log In to Docker Hub
+Install Docker:
+
+sudo yum -y install docker
+Add cloud_user to the docker group:
+
+sudo usermod -a -G docker cloud_user
+Create the docker group:
+
+newgrp docker
+Enable the Docker service:
+
+sudo systemctl enable docker.service
+Start the Docker service:
+
+sudo systemctl start docker.service
+Install Go
+Install the Go programming language:
+
+sudo yum -y install go
+Install kubectl
+Install kubectl:
+
+curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.28.3/2023-11-14/bin/linux/amd64/kubectl
+Check if kubectl was installed:
+
+ls
+Make the kubectl binary executable:
+
+chmod +x kubectl
+Move the kubectl binary to usr/local/bin/:
+
+sudo mv kubectl /usr/local/bin/
+Check the contents of /usr/local/bin/:
+
+ls /usr/local/bin/
+Install kind and Create the Cluster
+Install kind using the Go install method:
+
+go install sigs.k8s.io/kind@v0.16.0
+Check if there is a go directory:
+
+ls
+Look in the go directory:
+
+ls go
+You should see there is a bin and pkg directory.
+
+Check the contents of the bin directory:
+
+ls go/bin/
+You should see there is the kind binary.
+
+Copy the kind binary to /usr/local/bin/:
+
+sudo cp go/bin/kind /usr/local/bin/
+Check the contents of usr/local/bin/:
+
+ls /usr/local/bin/
+You should see both the kind and kubectl binaries in there.
+
+Create the Kubernetes cluster to test the operator:
+
+kind create cluster --name operator-dev
+Use the newly created cluster using the command displayed:
+
+kubectl cluster-info --context kind-operator-dev
+Check what clusters we have running:
+
+kind get clusters
+Install Operator SDK and Enable OLM
+Set the architecture environment variable:
+
+export ARCH=$(case $(uname -m) in x86_64) echo -n amd64 ;; aarch64) echo -n arm64 ;; *) echo -n $(uname -m) ;; esac)
+Set the operating system environment variable:
+
+export OS=$(uname | awk '{print tolower($0)}')
+Set the Operator SDK download URL environment variable:
+
+export OPERATOR_SDK_DL_URL=https://github.com/operator-framework/operator-sdk/releases/download/v1.32.0
+Pull the binary file for the Operator SDK:
+
+curl -LO ${OPERATOR_SDK_DL_URL}/operator-sdk_${OS}_${ARCH}
+Check for our binary file:
+
+ls
+Make the binary file executable:
+
+chmod +x operator-sdk_linux_amd64
+Move the binary file to /usr/local/bin/:
+
+sudo mv operator-sdk_linux_amd64 /usr/local/bin/operator-sdk
+When prompted, enter the password for cloud_user.
+
+Check the contents of /usr/local/bin/:
+
+ls /usr/local/bin/
+You should see the binary files for kind, kubectl, and operator-sdk listed.
+
+Install OLM:
+
+operator-sdk olm install
+Log into Docker Hub:
+
+docker login <YOUR_USERNAME>
+When prompted, enter the password you created for Docker Hub. If your login succeeds, then you have successfully completed this lab.
