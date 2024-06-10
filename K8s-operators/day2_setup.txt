@@ -1,4 +1,4 @@
-nstall Docker and Log In to Docker Hub
+Install Docker and Log In to Docker Hub
 Install Docker:
 
 sudo yum -y install docker
