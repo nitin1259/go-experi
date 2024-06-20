@@ -1,7 +1,5 @@
 ## Kubernetes Operators Training
 
-### 1. Prerequisites
-
 #### a. Custom Resource Definition (CRD)
 - **Definition:**
   - CRDs are a way to extend the Kubernetes API to allow for custom resources.
