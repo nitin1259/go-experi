@@ -13,6 +13,6 @@ Number of chunks: 2
 
 import "fmt"
 
-func program(){
+func bruteForceMethod(){
 	fmt.Println("starting program")
 }
