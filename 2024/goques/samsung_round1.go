@@ -14,5 +14,5 @@ Number of chunks: 2
 import "fmt"
 
 func bruteForceMethod(){
-	fmt.Println("starting program")
+	fmt.Println("starting program...")
 }
