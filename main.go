@@ -4,8 +4,6 @@ import "fmt"
 
 func main() {
 
-	comapnyName:= "$τяµ¢†ß¥†£"
-
-	fmt.Println("Company Name is : ", comapnyName)
+	fmt.Println("starting main...")
 	
 }
