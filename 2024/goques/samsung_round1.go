@@ -16,3 +16,7 @@ import "fmt"
 func bruteForceMethod(){
 	fmt.Println("starting program...")
 }
+
+func optimisedMethod(){
+	fmt.Println("stating optimisedMethod")
+}
