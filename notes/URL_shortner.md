@@ -1,8 +1,19 @@
+# URL Shortening System Design
+
+1. Features(Lenth of URL, domain) - Functional and non functional requirement.
+2. Estimates (CPU, memory)
+3. Design goal - tradeoff (CAP)
+4. HLD
+5. Scalling
+
 Functional Requirement
+
 - Shorten - shorten the URL
 - Redirection - should redirect the shorten URL to actual URL
 - Expiry - should have an expiry of of URL shortened.
-Non Functional Requirement 
+
+Non Functional Requirement
+
 - Highly Available
 - low latency
 - Secure - URL should not be predictable.
