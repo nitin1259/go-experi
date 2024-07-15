@@ -42,3 +42,55 @@ func printOdd1(wg *sync.WaitGroup, evenChan chan int, oddChan chan int) {
 		evenChan <- num + 1
 	}
 }
+
+
+/*
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	fmt.Println("starting main...")
+
+	ch := make(chan int)
+
+	go printEven(ch)
+	go printOdd(ch)
+
+	ch<-0
+
+	select {}
+
+}
+
+func printEven(ch chan int){
+	for{
+		chanVal := <-ch
+		if(chanVal%2==0){
+			fmt.Println("Even ch:", chanVal)
+			ch<-chanVal+1
+		}else{
+			ch<-chanVal
+		}
+	}
+}
+
+
+func printOdd(ch chan int){
+	for{
+		chanVal := <-ch
+		if(chanVal%2!=0){
+			fmt.Println("Odd ch:", chanVal)
+			ch<-chanVal+1
+		}else{
+			ch<-chanVal
+		}
+	}
+}
+
+
+*/
