@@ -1,0 +1,23 @@
+Top 10 questions to master system design (for interviews and office work)
+
+1. How would you design a URL shortener like bit.ly? https://bit.ly/3ychmnl
+
+2. How would you design a News feed system? https://bit.ly/3W8JMGR
+
+3. Explain Load balancer and its type? https://bit.ly/3W3hpd2
+
+4. Explain Latency and Throughput? https://bit.ly/3Wrm3TQ
+
+5. How would you design a social media like Tiktok/instagram system? https://bit.ly/3YcqZx0
+
+6. How would you design an online payment system? https://bit.ly/4bP73U4
+
+7. How would you design a file storage service like Google Drive or Dropbox? 
+https://bit.ly/4bOCvSu
+
+8. How would you design a video streaming like amazon prime/Netflix system? 
+https://bit.ly/3y3muKB
+
+9. How would you Scale your software, explain sharding? https://bit.ly/4bVtcQG
+
+10. Explain Forward and Reverse proxy? https://bit.ly/3Y6I37x
