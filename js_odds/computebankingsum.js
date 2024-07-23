@@ -57,3 +57,5 @@ console.log(
     .crore(7)
     .value()
 );
+
+// write the closure implementation  of above program ??
