@@ -1,0 +1,19 @@
+A Kubernetes pod needs to resolve an external domain like google dot com, here's how it works 👇
+
+1. The pod sends a DNS query to the cluster's DNS service, which is usually a CoreDNS pod. DNS resolution for cluster services happen here, not the external domains.
+
+2. So the CoreDNS pod acts as a DNS forwarder and sends the query to the upstream DNS servers configured in the cluster.
+
+3. The upstream DNS servers, which are typically (public DNS servers like Google's or a local one), resolve the domain name to an IP address.
+
+4. The resolved IP address is then sent back to the CoreDNS pod, which forwards it to the original pod that made the request.
+
+5. The pod can now connect to the external resource using the resolved IP address.
+
+6. NodeLocal DNSCache caches DNS records on each node, reducing the load on the cluster's DNS server and improving resolution speed.
+
+However it needs to be enabled by the admin, once enabled it runs as a deamonset on every node.
+
+- Improves DNS resolution performance
+- Reduces latency and timeouts
+- Decreases load on the cluster's DNS server
